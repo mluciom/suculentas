@@ -10,19 +10,37 @@
         img {
             height: 200px; 
             width: 180px; 
-            object-fit: cover;
+            object-fit: cover;  /* cover contain none fill */
         }
     </style>
 </head>
-<body>
+<body>    
     <h1>Suculentas à venda</h1>
     <p>Clique ou toque na imagem para aumentar</p>
-    <br>    
-    <a href="https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1"><img src="https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1" alt="imagem 2" ></a> <!-- style="height: 200px; width: 180px; object-fit: cover;" -->
-    <a href="https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1"><img src="https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1" alt="imagem 1"></a>   <!-- cover contain none fill --> 
-    <a href="https://cpgb5g.dm.files.1drv.com/y4mXrRPWSJKmCITWwRYhtElsRxfwmZS6wq6fDgk0y4DG5mxzqqaatpKzzaw9mzt1WVqB1kWVC26Oj0_X0yNptv0Vj4PKyIwAkY8qpEnBbQIwE8R7DxYWQHOdnptEsM5RIYdYWdVemD8zkvDIaLrA992TtODYch5Q8AL9V26CB1DSgAzB7gtmDzDr4F5lxZRY9C2wQlS4vQJM5NL1l1NvvfdcQ/1635694774284.jpg?psid=1"><img src="https://cpgb5g.dm.files.1drv.com/y4mXrRPWSJKmCITWwRYhtElsRxfwmZS6wq6fDgk0y4DG5mxzqqaatpKzzaw9mzt1WVqB1kWVC26Oj0_X0yNptv0Vj4PKyIwAkY8qpEnBbQIwE8R7DxYWQHOdnptEsM5RIYdYWdVemD8zkvDIaLrA992TtODYch5Q8AL9V26CB1DSgAzB7gtmDzDr4F5lxZRY9C2wQlS4vQJM5NL1l1NvvfdcQ/1635694774284.jpg?psid=1" alt="imagem 1"></a>   <!-- cover contain none fill -->
+    <br>
+
+    <a id="id-a-01" href=""><img id="id-img-01" src=""/></a>
+    <a id="id-a-02" href=""><img id="id-img-02" src=""/></a>
+    <a id="id-a-03" href=""><img id="id-img-03" src=""/></a>
+    <script type="text/javascript">    
+        var aVar = document.getElementById("id-a-01");
+        var imgVar = document.getElementById("id-img-01");
+        var imgURL = "https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1";
+        aVar.href = imgURL;                
+        imgVar.src = imgURL;
+
+        aVar = document.getElementById("id-a-02");
+        imgVar = document.getElementById("id-img-02");
+        imgURL = "https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1";
+        aVar.href = imgURL;                
+        imgVar.src = imgURL;
+
+        aVar = document.getElementById("id-a-03");
+        imgVar = document.getElementById("id-img-03");
+        imgURL = "https://cpgb5g.dm.files.1drv.com/y4mXrRPWSJKmCITWwRYhtElsRxfwmZS6wq6fDgk0y4DG5mxzqqaatpKzzaw9mzt1WVqB1kWVC26Oj0_X0yNptv0Vj4PKyIwAkY8qpEnBbQIwE8R7DxYWQHOdnptEsM5RIYdYWdVemD8zkvDIaLrA992TtODYch5Q8AL9V26CB1DSgAzB7gtmDzDr4F5lxZRY9C2wQlS4vQJM5NL1l1NvvfdcQ/1635694774284.jpg?psid=1";
+        aVar.href = imgURL;                
+        imgVar.src = imgURL;        
+    </script>
     
-
-
 </body>
 </html>

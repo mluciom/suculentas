@@ -8,53 +8,49 @@
     <title>Suculentas</title>
     <style>
         img {
-            height: 180px; /* 200px; */
-            width: 162px; /* 180px; */
+            height: 180px; 
+            width: 162px; 
             object-fit: cover;  /* cover contain none fill */
         }
     </style>
 </head>
-<body>    
+<body>   
+    <!-- títulos e paragrafos-->
     <h1>Suculentas à venda</h1>
-    <p>Clique ou toque na imagem para aumentar</p>
-    <br>
-
-    <a id="id-a-01" href=""><img id="id-img-01" src=""/></a>
-    <a id="id-a-02" href=""><img id="id-img-02" src=""/></a>
-    <a id="id-a-03" href=""><img id="id-img-03" src=""/></a>
-    <a id="id-a-04" href=""><img id="id-img-04" src=""/></a>
-    <a id="id-a-05" href=""><img id="id-img-05" src=""/></a>
-    <script type="text/javascript">    
-        var aVar = document.getElementById("id-a-01");
-        var imgVar = document.getElementById("id-img-01");
-        var imgURL = "https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1";
-        aVar.href = imgURL;                
-        imgVar.src = imgURL;
-
-        aVar = document.getElementById("id-a-02");
-        imgVar = document.getElementById("id-img-02");
-        imgURL = "https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1";
-        aVar.href = imgURL;                
-        imgVar.src = imgURL;
-
-        aVar = document.getElementById("id-a-03");
-        imgVar = document.getElementById("id-img-03");
-        imgURL = "https://cpgb5g.dm.files.1drv.com/y4mXrRPWSJKmCITWwRYhtElsRxfwmZS6wq6fDgk0y4DG5mxzqqaatpKzzaw9mzt1WVqB1kWVC26Oj0_X0yNptv0Vj4PKyIwAkY8qpEnBbQIwE8R7DxYWQHOdnptEsM5RIYdYWdVemD8zkvDIaLrA992TtODYch5Q8AL9V26CB1DSgAzB7gtmDzDr4F5lxZRY9C2wQlS4vQJM5NL1l1NvvfdcQ/1635694774284.jpg?psid=1";
-        aVar.href = imgURL;                
-        imgVar.src = imgURL;
-        
-        aVar = document.getElementById("id-a-04");
-        imgVar = document.getElementById("id-img-04");
-        imgURL = "https://cpgc5g.dm.files.1drv.com/y4mAXObeQOwFFeLGU-p43qlOiOirLsc1ycHcfotb6BECoadBeGR-xQX2G4vVLjO8jrzBxiDI5WgFgNh6Yukpn8gmMvm-BCoc-Elg4oaZtaCjg4ZHorXjNIB2aYwRLYycZlP09ZsQl9krtaHbbHRqluY79HDA5CnWxEJxQncSwcr1LuwmgTgOEt11GvqZWg4gZlG7hmxR4eI3wSsL1sQO0Oebg/1635694774290.jpg?psid=1";
-        aVar.href = imgURL;                
-        imgVar.src = imgURL;
-
-        aVar = document.getElementById("id-a-05");
-        imgVar = document.getElementById("id-img-05");
-        imgURL = "https://cpgh5g.dm.files.1drv.com/y4mV1De480CN2tazsITT63sqFIESErjErutgen6Ok_dnR35ObzQ7xOjTURZiylpfVw1TfK4VhIk4L7rUjdf4tRXoSu9k6HLHx9efHLPC3M_QPDGes5oXtYbrKTGbSzrU5e8EAjC68tWtNhkAx6phrRF9lU3nxP2MNmvCLq328-xytPclLkKDkJcF2TMOJrhMMBgyUew3Kf-Liy4ITZNK04yAQ/1635694774296.jpg?psid=1";
-        aVar.href = imgURL;                
-        imgVar.src = imgURL;
-
+    <p>Clique ou toque na foto para aumentar de tamanho e depois no botão voltar do navegador.</p>
+    <hr>
+    
+    <!-- imagens -->
+    <p id="id_html"></p>  <!-- id é substituído por um texto html-->  
+    <script>
+        // armazena urls de imagens em array
+        const urls = [
+            // img 1
+            "https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1",
+            // img 2
+            "https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1",
+            // img 3
+            "https://cpgb5g.dm.files.1drv.com/y4mXrRPWSJKmCITWwRYhtElsRxfwmZS6wq6fDgk0y4DG5mxzqqaatpKzzaw9mzt1WVqB1kWVC26Oj0_X0yNptv0Vj4PKyIwAkY8qpEnBbQIwE8R7DxYWQHOdnptEsM5RIYdYWdVemD8zkvDIaLrA992TtODYch5Q8AL9V26CB1DSgAzB7gtmDzDr4F5lxZRY9C2wQlS4vQJM5NL1l1NvvfdcQ/1635694774284.jpg?psid=1",
+            // img 4
+            "https://cpgc5g.dm.files.1drv.com/y4mAXObeQOwFFeLGU-p43qlOiOirLsc1ycHcfotb6BECoadBeGR-xQX2G4vVLjO8jrzBxiDI5WgFgNh6Yukpn8gmMvm-BCoc-Elg4oaZtaCjg4ZHorXjNIB2aYwRLYycZlP09ZsQl9krtaHbbHRqluY79HDA5CnWxEJxQncSwcr1LuwmgTgOEt11GvqZWg4gZlG7hmxR4eI3wSsL1sQO0Oebg/1635694774290.jpg?psid=1",
+            //img 5
+            "https://cpgh5g.dm.files.1drv.com/y4mV1De480CN2tazsITT63sqFIESErjErutgen6Ok_dnR35ObzQ7xOjTURZiylpfVw1TfK4VhIk4L7rUjdf4tRXoSu9k6HLHx9efHLPC3M_QPDGes5oXtYbrKTGbSzrU5e8EAjC68tWtNhkAx6phrRF9lU3nxP2MNmvCLq328-xytPclLkKDkJcF2TMOJrhMMBgyUew3Kf-Liy4ITZNK04yAQ/1635694774296.jpg?psid=1",
+        ];
+        // monta âncoras 1 a i_max em text_a - ex:
+        // <a id="id-a-1" href=""><img id="id-img-1" src=""/></a> ...
+        var i_max = 5;
+        var text_a = "";
+        for (var i = 1; i <= i_max; i++) {
+            text_a += '<a id="' + 'id-a-' + i + '" href=""><img id="' + 'id-img-' + i + '" src=""/></a>';                        
+        }
+        document.getElementById("id_html").innerHTML = text_a;
+        // atribui urls das imagens às âncoras em href e src
+        for (var i = 1; i <= i_max; i++) {
+            var tag_a = document.getElementById("id-a-"+i);
+            var tag_img = document.getElementById("id-img-"+i);
+            tag_a.href = urls[i-1];                
+            tag_img.src = urls[i-1];
+        }
     </script>
 
 </body>

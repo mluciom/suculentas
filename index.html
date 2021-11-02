@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Suculentas</title>
     <style>
-        h3 {
+        /*h3 {
             text-align: center;           
-        }
+        }*/
         img {
             height: 162px; /* 180px; */
             width: 162px; /* 162px; */ 
@@ -19,9 +19,13 @@
 </head>
 <body>
     <!-- título -->
-    <h3>    
-    <img src="imagens/avatar.jpg" alt="avatar" style="height: 54px; width: 54px">
-    Suculentas à venda
+    <h3>        
+        <table align="center" frame="nosides">            
+            <tr>
+                <td><img src="imagens/avatar.jpg" alt="avatar" style="height: 54px; width: 54px"></td>
+                <td>Suculentas à venda</td>
+            </tr>            
+        </table>    
     </h3>
     <hr>
 
@@ -54,7 +58,7 @@
         var i_max = img_urls.length; //quantidade de itens no array
         var text_a = "";
         for (var i = 1; i <= i_max; i++) {
-            text_a += '<a id="' + 'id-a-' + i + '" href="" target="_blank"><img id="' + 'id-img-' + i + '" src=""/></a>';                        
+            text_a += '<a id="' + 'id-a-' + i + '" href="" target="_self"><img id="' + 'id-img-' + i + '" src=""/></a>';                        
         }
         document.getElementById("id_html").innerHTML = text_a;
         // atribui urls das imagens às âncoras em href e src

@@ -15,10 +15,12 @@ header {
 }    
 div { 
     margin-top:110px;           
-    text-align: center;
+    text-align:center;
 }
 img {
-    border-radius: 5px;            
+    border-radius: 5px;
+    padding: 1px 0;  
+    padding-inline: 2px 0;
 }        
 h2 {
     /*border-radius: 5px;*/

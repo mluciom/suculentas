@@ -1,3 +1,4 @@
+// array com urls de imagens
 const img_urls = [
     "https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1",
     "https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1",
@@ -19,3 +20,52 @@ const img_urls = [
     "https://cjgx5g.dm.files.1drv.com/y4mq77qtXr7UZmxKD98uzV_GRLGr5lvloqKKO4MEPEEYpiCKKpI03MfVVdIvpX8jeBZ-Es_Fj30w8CXUwW03rApFBg2Y0pMg-aNL8FtnrbQi16bk8RhOhB3KPC6NAs6jM9AfsN_ABBEyCjaaR8xsLgFTmxlFaRDeB2D05uNlUJ3Ave7qIVSoyoVyaWGwFTf3PDFdYWNos6uHRV25Q6xtTaomQ/1635694774373.jpg?psid=1",
     "https://cjgy5g.dm.files.1drv.com/y4muT1Dn1QohBfVo1XZgzBxzaGRsNAiyYnOwl3aZjUVk_kx4a0U05uMVE6-FUL982e_xORtdRZmBOy4acYVebvRDxLugaLA9B-68aA_rypwvNzfCoq3PtTzSPhUK4lRKs1JKwcZr9pveqJtjTs0wZ_TdOJdnfT0qsUab4bIzLUY5dEiD6l01nqyxcHW_DtiZblzGkbJCgDcN9PB8I7RxH2l5A/1635694774379.jpg?psid=1",
 ];
+
+// header
+var text_a = "";
+text_a += '<h2> <!-- título -->' +
+'    <a name="top"></a>' +           
+'    <table align="center" frame="nosides"> ' +           
+'        <tr>' +
+'            <td><img src="imagens/avatar.png" alt="avatar" style="height: 54px; width: 54px"></td>' +
+'            <td>Suculentas à venda</td>' +
+'        </tr> ' +
+'    </table>' +
+'</h2>';
+document.getElementById("id_header").innerHTML = text_a;
+
+
+// ROTINA 1 - ativa
+// monta âncoras 1 a i_max em text_a 
+var i_max = img_urls.length; //quantidade de itens no array
+var text_a = "";
+for (var i = 1; i <= i_max; i++) {
+    if (pag == 1)
+       if (i == 1)
+          text_a += ' <a href="' + "pag02.html#top" + '" target="_self"><img src="' + img_urls[i-1] + '"></a>'
+       else 
+          text_a += ' <a href="' + "pag02.html#img" + i + '" target="_self"><img src="' + img_urls[i-1] + '"></a>';    
+    else 
+       text_a += ' <a name="img' + i + '"></a><a href="' + img_urls[i-1] + '" target="_self"><img src="' + img_urls[i-1] + '"></a>';    
+}
+document.getElementById("id_html").innerHTML = text_a; 
+//alert(text_a)
+/*
+
+// ROTINA 2 - válida (com índices de href e img)
+var i_max = img_urls.length; //quantidade de itens no array
+var text_a = "";
+for (var i = 1; i <= i_max; i++) {
+    if (pag == 1) text_a += ' <a id="' + 'id-a-' + i + '" href="" target="_self"><img id="' + 'id-img-' + i + '" src=""/></a>'    
+    else text_a += ' <a name="img' + i + '"></a><a id="' + 'id-a-' + i + '" href="" target="_self"><img id="' + 'id-img-' + i + '" src=""/></a>';                        
+}
+document.getElementById("id_html").innerHTML = text_a;
+// atribui urls das imagens às âncoras em href e src
+for (var i = 1; i <= i_max; i++) {
+    var tag_a = document.getElementById("id-a-"+i);
+    var tag_img = document.getElementById("id-img-"+i);
+    if (pag == 1) tag_a.href = "pag02.html#img" + i
+    else tag_a.href = img_urls[i-1];                
+    tag_img.src = img_urls[i-1];
+}
+*/

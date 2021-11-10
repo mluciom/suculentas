@@ -1,0 +1,27 @@
+
+body {            
+    background-image: linear-gradient(to bottom, #3E5747, #708C46, #BFA863, #F2DAAC, #D9D1D0);
+}
+header {
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-image: linear-gradient(to bottom, #3E5747, #466651);
+    /*background: #3E5747;
+    text-align:center;
+    padding: 20px 0;*/
+}    
+div { 
+    margin-top:110px;           
+    text-align: center;
+}
+img {
+    border-radius: 5px;            
+}        
+h2 {
+    /*border-radius: 5px;*/
+    background-color:  #DCC48C; color: #3E5747;
+}
+

@@ -6,51 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Suculentas</title>
+    <title>Suculentas</title> <!-- título -->
+    <!-- estilo -->    
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {            
-            background-image: linear-gradient(to bottom, #3E5747, #708C46, #BFA863, #F2DAAC, #D9D1D0);
-        }    
-        div {            
-            text-align: center;
-        }
         img {
-            border-radius: 5px;
-            height: 162px; /* 180px; */
-            width: 162px; /* 162px; */ 
+            height: 162px; 
+            width: 162px;
             object-fit: cover;  /* cover contain none fill */
         }        
-        h2 {
-            border-radius: 5px;
-            background-color:  #DCC48C; color: #3E5747;
-        }
     </style>
 </head>
 
-<body>  
-    
-    <h2> <!-- título -->
-        <a name="top"></a>
-        <table align="center" frame="nosides">            
-            <tr>
-                <td><img src="imagens/avatar.png" alt="avatar" style="height: 54px; width: 54px"></td>
-                <td>Suculentas à venda</td>
-            </tr>            
-        </table>    
-    </h2>
-    <hr> <!-- Linha Horizontal -->
-
-    <div>
-        <p id="id_html"></p>  <!-- id é substituído por um texto html --> 
-        <!-- fonte de imagens -->
-        <script type="text/javascript" src="imgurls.js"></script>
-        <!-- âncoras -->
-        <script type="text/javascript">let pag = 1;</script>
-        <script type="text/javascript" src="ancoras.js"> </script> 
+<body>
+    <a name="top"></a>
+    <header id="id_header"></header> <!-- id é substituído por um texto html -->
+    <div> 
+        <p id="id_html"></p>  
     </div>
+    <!-- header, fonte de imagens e âncoras -->    
+    <script type="text/javascript">let pag = 1;</script>         
+    <script type="text/javascript" src="body.js"></script>
 
-    <p><a href="#top">Voltar ao topo</a></p>    
-
+    <p><a href="#top">Voltar ao topo</a></p>
 </body>    
 
 </html>

@@ -73,7 +73,7 @@
         <!-- imagens -->
         <p id="id_html"></p>  <!-- id é substituído por um texto html -->  
         <script>
-            // armazena urls de imagens em array
+            // armazena urls de imagens em array            
             const img_urls = [
                 "https://b5gz5g.dm.files.1drv.com/y4m5eR5QoyhI8mPuE2VS8lBj4zS1f60r3P7rw42pYl9-Cy2FmCF5QExo-V3T7vrDrw7rTD8FHH3yc5MzWEfpDH5QSI0v7FgNgQY-TkJChhj_7VxhsDScWMF82KXRORd5FIvn161PjHHkADCD4U67jXk60l_O9zokqR_cIp6AD4LcQOI4k5AnDiiKMXZDs84CcOjlID9o6gRQz4FPuyfpnQDng/IMG-20211031-WA0000.jpg?psid=1",
                 "https://cpge5g.dm.files.1drv.com/y4mjceHKdkrLY7fV-wRj9WoNL-xzRDM-S14bS5oYL9-Hv_YO8KpcSutjj0-gRwRWdXKcxUQnap9IcJdlFj_N_jadbPUv3mWQI-a5FS8vK7MTzDuNz2M1fGDZdFvIn5LP-d3MbH7t1HD0zD2R_5P3TQSwaQ6i6eSg8bEbYA2CgQ3Y4Pv3FsRuiEBx9M1TAnrvps_TsuOK403zbLBBHPYHv6WLg/1635694774277.jpg?psid=1",
@@ -106,14 +106,15 @@
             for (var i = 1; i <= i_max; i++) {
                 var tag_a = document.getElementById("id-a-"+i);
                 var tag_img = document.getElementById("id-img-"+i);
-                tag_a.href = img_urls[i-1];                
+                // tag_a.href = img_urls[i-1];
+                tag_a.href = "pag02.html#img" + i;                
                 tag_img.src = img_urls[i-1];
             }
         </script>
 
     </div>
 
-    <p><a href="#top">Voltar ao topo</a></p>
+    <p><a href="#top">Voltar ao topo</a></p>    
 
 </body>    
 

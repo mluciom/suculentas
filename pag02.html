@@ -7,76 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Suculentas</title>
-    <style> 
-        
-        
-        /* Color Theme in Hex 
-        /* Paleta 1 - baseada em harmonia complementar   
-        .p1_cor1_hex { color: #56782F; } 
-        .p1_cor2_hex { color: #99D158; }
-        .p1_cor3_hex { color: #DBFFB0; }
-        .p1_cor4_hex { color: #DFB8E6; }
-        .p1_cor5_hex { color: #BF72CC; }   
-        */     
-        /* Paleta 2 - baseada nas cores das imagens do site 
-        .p2_cor1_hex { color: #3E5747; }
-        .p2_cor2_hex { color: #708C46; }
-        .p2_cor3_hex { color: #BFA863; }
-        .p2_cor4_hex { color: #F2DAAC; }
-        .p2_cor5_hex { color: #D9D1D0; } */
-        
-        /*
-        .u-containProse {
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 40em;
-        }
-        .u-release {
-            margin-left: calc(-50vw + 50%);
-            margin-right: calc(-50vw + 50%);
-        } 
-        */
-
-
-        body {
-            /* background-color: #3E5747; */
-            /* paleta 1
-            background-image: linear-gradient(to bottom, #56782F, #99D158, #DBFFB0, #DFB8E6, #BF72CC);*/
-            /* paleta 2 */
+    <style>
+        body {            
             background-image: linear-gradient(to bottom, #3E5747, #708C46, #BFA863, #F2DAAC, #D9D1D0);
         }
-    
-        div {
-            /*  width: auto; */  /* 496px; */
-            /* margin: auto; */            
+        div {            
             text-align: center;
             justify-content: center;
             display: grid;             
         }
-
         img {    
             border-radius: 5px;
-            width: 90vw;
-            /* margin-bottom: 0.1rem; */
-            /* height: 162px;   auto; 162px; 180px;  altura */
-            /* width: 162px;   auto; 162px;  162px; largura */
-            /* object-fit: cover;   cover contain none fill */
+            width: 95vw;
         }
-
-        /* h2 {text-align: center;} */
         h2 {
             border-radius: 5px;
             background-color:  #DCC48C; color: #3E5747;
-        } 
-
+        }
     </style>
 </head>
 
-<body class="u-release">  
+<body>
     
     <h2> <!-- título -->
-        <a name="top"></a>  
-             
+        <a name="top"></a>
         <table align="center" frame="nosides">            
             <tr>
                 <td><img src="imagens/avatar.png" alt="avatar" style="height: 54px; width: 54px"></td>
@@ -86,30 +40,13 @@
     </h2>
     <hr> <!-- Linha Horizontal -->
 
-    <div class="u-containProse">
-        <a name="pag1"></a>
-
-        <!-- imagens -->
+    <div>
         <p id="id_html"></p>  <!-- id é substituído por um texto html -->
-        <script type="text/javascript" src="imgurls.js"></script> <!-- armazena urls de imagens em array -->          
-        <script type="text/javascript"> 
-            // monta âncoras 1 a i_max em text_a - ex: <a id="id-a-1" href=""><img id="id-img-1" src=""/></a> ...
-            var i_max = img_urls.length; //quantidade de itens no array
-            var text_a = "";
-            for (var i = 1; i <= i_max; i++) {
-                text_a += ' <a name="img' + i + '"></a><a id="' + 'id-a-' + i + '" href="" target="_self"><img id="' + 'id-img-' + i + '" src=""/></a>';                        
-            }
-            document.getElementById("id_html").innerHTML = text_a;
-            // atribui urls das imagens às âncoras em href e src
-            for (var i = 1; i <= i_max; i++) {
-                var tag_a = document.getElementById("id-a-"+i);
-                var tag_img = document.getElementById("id-img-"+i);
-                tag_a.href = img_urls[i-1];                
-                tag_img.src = img_urls[i-1];
-            }
-            /* alert(text_a); */
-        </script>
-
+        <!-- fonte de imagens -->
+        <script type="text/javascript" src="imgurls.js"></script> 
+        <!-- âncoras -->
+        <script type="text/javascript">let pag = 2;</script>          
+        <script type="text/javascript"src="ancoras.js"> </script> 
     </div>
 
     <p><a href="#top">Voltar ao topo</a></p>

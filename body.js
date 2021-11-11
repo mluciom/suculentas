@@ -34,7 +34,6 @@ text_a += '<h2> <!-- título -->' +
 '</h2>';
 document.getElementById("id_header").innerHTML = text_a;
 
-
 // ROTINA 1 - ativa
 // monta âncoras 1 a i_max em text_a 
 var i_max = img_urls.length; //quantidade de itens no array
@@ -50,8 +49,8 @@ for (var i = 1; i <= i_max; i++) {
 }
 document.getElementById("id_html").innerHTML = text_a; 
 //alert(text_a)
-/*
 
+/*
 // ROTINA 2 - válida (com índices de href e img)
 var i_max = img_urls.length; //quantidade de itens no array
 var text_a = "";
